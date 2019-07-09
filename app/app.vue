@@ -1,5 +1,5 @@
 <style lang="less">
-    @import './less/main.less';
+@import './less/main.less';
 </style>
 
 <template>
@@ -10,19 +10,19 @@
 </template>
 
 <script>
-    import './components/modules';
-    import './components/categories';
+import './components/modules';
+import './components/categories';
 
-    export default {
-        data() {
-            return {
-                modules: [
-                    {
-                        name: 'index',
-                        route: '/index'
-                    }
-                ]
-            }
-        },
-    }
+export default {
+    data() {
+        return {
+            modules: [
+                {
+                    name: '基本形状',
+                    route: '/basic-shapes',
+                },
+            ],
+        };
+    },
+}
 </script>

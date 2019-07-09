@@ -16,31 +16,24 @@
 </template>
 
 <script>
-    import Vue from 'vue';
+import Vue from 'vue';
 
-    const Modules = Vue.extend({
-        props: {
-            modules: {
-                type: Array,
-                default: [],
-            },
+const Modules = Vue.extend({
+    props: {
+        modules: {
+            type: Array,
+            default: [],
         },
-        data() {
-            return {}
-        },
-        methods: {},
-        mounted() {},
-    });
+    },
+});
 
-    Vue.component('modules', Modules);
+Vue.component('modules', Modules);
 
-    export default Modules;
-
+export default Modules;
 </script>
 
 <style lang="less" scoped>
 li {
     list-style: none;
 }
-
 </style>
