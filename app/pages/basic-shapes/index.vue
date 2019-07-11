@@ -13,8 +13,11 @@ export default {
                     name: '三角形',
                     instances: [
                         {
-                            name: 'triangle',
-                            route: '/basic-shapes/triangle',
+                            name: '1',
+                            route: '/basic-shapes/triangle/1',
+                        },{
+                            name: '2',
+                            route: '/basic-shapes/triangle/2',
                         },
                     ],
                 },
