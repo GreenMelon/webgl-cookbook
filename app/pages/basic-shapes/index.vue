@@ -1,6 +1,9 @@
 <template>
     <main>
-        <categories :categories="categories"></categories>
+        <categories
+            :base-route="baseRoute"
+            :categories="categories"
+        />
     </main>
 </template>
 
@@ -8,16 +11,16 @@
 export default {
     data() {
         return {
+            baseRoute: '/basic-shapes',
             categories: [
                 {
-                    name: '三角形',
-                    instances: [
+                    name: 'triangle',
+                    alias: '三角形',
+                    children: [
                         {
-                            name: '1',
-                            route: '/basic-shapes/triangle/1',
-                        },{
-                            name: '2',
-                            route: '/basic-shapes/triangle/2',
+                            route: '1',
+                        }, {
+                            route: '2',
                         },
                     ],
                 },
